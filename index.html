@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/0225036776.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./js/nav.js">
     <link rel="icon" href="img/favicon.svg">
+    <script defer src="script.js"></script>
     <title>elfiltrito</title>
 </head>
 <body>
@@ -123,9 +124,36 @@
             </article>
 
             <article class="card-filtros3d">
-                <a href="stickers.html" class="imgfiltro3d"><img src="img/filtro3d.svg"  height="250px" alt="3D"></a>
-                <h3 class="title">Filtros 3D</h3>
+                <a href="stickers.html" class="imgfiltro3d"><img src="img/elsensei.svg"  height="250px" alt="3D"></a>
+                <button class="elsensei" data-modal-target="#modal">Comprar Semillas</button>
             </article>
+
+            <!-- POP UP CON INFORMACION DE CONTACTO A ELSENSEI SEMILLAS-->
+
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">¿Cultivas? <br> El Sensei tiene lo que necesitas</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <article class="card-instagram">
+                        <h3 class="title">Ir a Instagram de <br> El Sensei</h3> 
+                        <a href="https://www.instagram.com/elsenseiseeds/?hl=es-la" class="imgstickers"><img src="img/instasensei.svg" height="90px" alt="stickers"></a>
+                    </article>
+              
+                    <article class="card-mail">
+                        <a href="" class="imgstickers"><img src="img/mailsensei.svg" height="90px" alt="stickers"></a>
+                        <h3 class="title">Pedir Catalogo al Mail</h3>
+                        <br>
+                        <a href="mailto:elsenseiseeds@gmail.com"><button type="submit" class="signup-input-submit">Escribir Email</button></a>
+                   
+                    </article>
+
+                </div>
+            </div>
+              <div id="overlay"></div>
+
+              <!-- TERMINA POP UP CON INFO CONTACT ELSENSEI SEMILLAS-->
 
             <article class="card-specialsticker">
                 <a href="stickers.html" class="imgstickers"><img src="img/specialsticker.svg" width="220px" alt="stickers"></a>

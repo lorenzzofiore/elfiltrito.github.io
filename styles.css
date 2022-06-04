@@ -743,8 +743,124 @@ input{
 }
 
 
+/* ESTILOS POP UP ELSENSEI SEMILLAS*/
 
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 30px;
+    z-index: 10;
+    background-color: #ffd400;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111111;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-body .title{
+      text-align: center;
+  }
+  .card-filtros3d .elsensei{
+    padding: 14px;
+    background-color: #fff;
+    color: #93c021;
+    font-weight: 600;
+    border-radius: 1em;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+  }
+  .card-filtros3d .elsensei:hover{
+    background-color: #fff;
+    color: #ffd200;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 1em 1em;
+  }
 
+  .modal-body article{
+      margin-top: 1em;
+  }
+
+  .modal-body .card-instagram{
+    background-color: #111;
+    color: #fff;
+    padding: 2em;
+    border: none;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal-body .card-mail{
+    background-color: #111;
+    padding: 2em;
+    color: #fff;
+    border: none;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.modal-body .card-mail button{
+    background-color: #fff;
+    color: #93c021;
+}
+.modal-body .card-mail button:hover{
+    background-color: #ffd200;
+    color: #111;
+}
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 
 
 
