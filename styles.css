@@ -20,7 +20,7 @@ body{
 
 .headerfiltrito{
     background-color: #806bae;
-    max-width: 1920px;
+    max-width: 100%;
     display: flex;
     margin: 20px;
     padding: 1em;
@@ -77,9 +77,9 @@ body{
 }
 
 .btnt-skvio button:hover{
-   background-color: #ffd200;
-   color: #111111;
-   transform: scale(1.2);
+    background-color: #ffd200;
+    color: #111111;
+    transform: scale(1.2);
 }
 
 .headerfiltrito .socialicons{
@@ -230,7 +230,7 @@ body{
 .contenedor-banner .contenido .btn-personalizar button:hover,
 .contenedor-cards .especiales .btn-personalizar button:hover,
 .contenedor-cards .categorias .btn-personalizar button:hover{
-   transform: scale(1.1);
+    transform: scale(1.1);
     background-color: #111;
     color: #ffd200;  
 }
@@ -365,7 +365,6 @@ body{
 .contenedor-cards .card-t-skvio:hover{
     transform: scale(1.03);
     box-shadow: 5px 5px 5px #806bae;
-   
 }
 
 .contenedor-cards .card-filtros3d{
@@ -588,7 +587,7 @@ input{
     flex-direction: column;
     margin-left: auto;
 	margin-right: auto;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
 }
 
@@ -617,6 +616,8 @@ input{
     font-size: 14px;
 }
 
+
+
 .contenedor-bannert-skvio .contenido .btn-modelos button:hover{
     transform: scale(1.1);
     background-color: #111;
@@ -624,10 +625,9 @@ input{
 }
 
 .contenedor-bannert-skvio .imgbanner{
-   width: auto;
-   margin-left: auto;
-   margin-right: auto;
-  
+    margin-left: auto;
+    width: auto;
+    margin-right: auto;
 }
 
 .contenedor-contactcartas{
@@ -684,7 +684,8 @@ input{
 
 /* ESTILOS CONTENEDOR INFORMACION CARTAS */
 
-.contenedorcartas-info{
+.contenedorcartas-info,
+.contenedorcartas-action-info{
     width: 100%; 
 	max-width: 1440px;
     margin-left: auto;
@@ -694,7 +695,8 @@ input{
     justify-content: space-evenly;
 }
 
-.contenedorcartas-info .contenido{
+.contenedorcartas-info .contenido,
+.contenedorcartas-action-info .contenido{
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -703,21 +705,24 @@ input{
     justify-content: center;
 }
 
-.contenedorcartas-info .contenido h1{
+.contenedorcartas-info .contenido h1,
+.contenedorcartas-action-info .contenido h1{
     color: #fff;
     font-size: 3em;
     font-weight: 800;
     text-align: left;
 }
 
-.contenedorcartas-info .contenido p{
+.contenedorcartas-info .contenido p,
+.contenedorcartas-action-info .contenido p{
     color: #fff;
     font-size: 1em;
     font-weight: 300;
     padding: 1.5em 0;
 }
 
-.contenedorcartas-info .contenido .btn-modelos button{
+.contenedorcartas-info .contenido .btn-modelos button,
+.contenedorcartas-action-info .contenido .btn-modelos button{
     padding: 14px;
     background-color: #fff;
     color: #93c021;
@@ -729,17 +734,18 @@ input{
     font-size: 14px;
 }
 
-.contenedorcartas-info .contenido .btn-modelos button:hover{
+.contenedorcartas-info .contenido .btn-modelos button:hover,
+.contenedorcartas-action-info .contenido .btn-modelos button:hover{
     transform: scale(1.1);
     background-color: #111;
     color: #ffd200;  
 }
 
-.contenedorcartas-info .imgbanner{
-   width: auto;
-   margin-left: auto;
-   margin-right: auto;
-  
+.contenedorcartas-info .imgbanner,
+.contenedorcartas-action-info .imgbanner{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -756,31 +762,31 @@ input{
     background-color: #ffd400;
     width: 500px;
     max-width: 80%;
-  }
-  
-  .modal.active {
+}
+
+.modal.active {
     transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-header {
+}
+
+.modal-header {
     padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .modal-header .title {
+}
+
+.modal-header .title {
     font-size: 1.25rem;
     font-weight: bold;
     color: #111111;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
-  .modal-body .title{
-      text-align: center;
-  }
-  .card-filtros3d .elsensei{
+}
+.modal-body .title{
+    text-align: center;
+}
+.card-filtros3d .elsensei{
     padding: 14px;
     background-color: #fff;
     color: #93c021;
@@ -790,30 +796,31 @@ input{
     border: none;
     transition: all 0.3s ease 0s;
     font-size: 14px;
-  }
-  .card-filtros3d .elsensei:hover{
+}
+
+.card-filtros3d .elsensei:hover{
     background-color: #fff;
     color: #ffd200;
-  }
-  
-  .modal-header .close-button {
+}
+
+.modal-header .close-button {
     cursor: pointer;
     border: none;
     outline: none;
     background: none;
     font-size: 1.25rem;
     font-weight: bold;
-  }
-  
-  .modal-body {
+}
+
+.modal-body {
     padding: 1em 1em;
-  }
+}
 
-  .modal-body article{
-      margin-top: 1em;
-  }
+.modal-body article{
+    margin-top: 1em;
+}
 
-  .modal-body .card-instagram{
+.modal-body .card-instagram{
     background-color: #111;
     color: #fff;
     padding: 2em;
@@ -844,8 +851,8 @@ input{
     background-color: #ffd200;
     color: #111;
 }
-  
-  #overlay {
+
+#overlay {
     position: fixed;
     opacity: 0;
     transition: 200ms ease-in-out;
@@ -855,20 +862,95 @@ input{
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
-  }
-  
-  #overlay.active {
+}
+
+#overlay.active {
     opacity: 1;
     pointer-events: all;
-  }
+}
 
 
 
 
 
+/* ESTILOS FILTROS MODELOS */
+
+.contenedor-modelfiltros{
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 5em;
+	max-width: 1440px;
+    margin-left: auto;
+	margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    justify-content: center;
+}
+
+.contenedor-modelfiltros .modelos-filtros{
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 25%) 1fr;
+    gap: 1em;
+    justify-content: center;
+}
 
 
+/*ESTILOS CARDS*/
 
+.modelos-filtros .card-filtros{
+    background-color: #fff;
+    color: #806bae;
+    padding: 1.5em;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.3s ease 0;
+
+}
+
+
+.modelos-filtros .card-filtros:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px #806bae;
+    color: #ffd200;
+}
+
+.modelos-filtros .card-stickers{
+    background-color: #fff;
+    color: #806bae;
+    padding: 1.5em;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.modelos-filtros .card-stickers:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px #806bae;
+    color: #ffd200;
+}
+
+.contenedor-modelfiltros h1{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor-modelfiltros p{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2em;
+}
 
 
 /* MEDIAS RESPONSIVE*/
@@ -879,7 +961,7 @@ input{
         font-size: 14px;
     }
     .contenedor-banner{
-      padding: 3em 0 0 3em;
+    padding: 3em 0 0 3em;
     }
 
 }
@@ -901,13 +983,16 @@ input{
         text-align: center;
         margin-top: -2em;
 	}
+    .contenedor-cards{
+        padding: 1rem;
+        grid-template-columns: 2fr;
+    }
     .contenedor-cards .categorias{
         grid-template-columns: 1fr;
         
     }
     .contenedor-cards .especiales {
         grid-template-columns: 1fr;
-       
     }
     .contenedor-contact{
         width: 100%;
@@ -915,6 +1000,12 @@ input{
     }
 
     .contenedorcartas-info{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .contenedorcartas-action-info{
         flex-direction: column-reverse;
         text-align: center;
         margin-top: 2em;
@@ -922,6 +1013,18 @@ input{
     }
     .contenedorcartas-info .contenido h1{
         text-align: center;
+    }
+    .contenedorcartas-action-info .contenido h1{
+        text-align: center;
+    }
+    .contenedor-banner .imgbanner img{
+        display: none;
+    }
+    .contenedor-banner{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -944,26 +1047,27 @@ input{
         padding: 2em 2em 2em 2em;
     
     }
-    .contenedor-banner {
-		grid-template-columns: 1fr;
-        margin-top: -7em;
-        padding: 2em 0 0 2em;
+    .contenedor-banner .imgbanner img{
+        display: none;
+    }
+    .contenedor-banner{
         display: flex;
-        float: left;
-	}
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
     
     .contenedor-banner .contenido .titlebanner{
         margin-top: 2em;
 		font-size: 3em;
-        text-align: left;
+        text-align: center;
 	}
     .contenedor-banner .contenido .text-banner{
-        text-align: left;
+        text-align: center;
     }
     .contenedor-bannert-skvio .imgbanner img{
         width: 450px;
     }
-   
 }
 
 @media screen and (max-width: 600px) {
@@ -982,7 +1086,6 @@ input{
         
     }
     .contenedor-cards .card-personalizados{
-       
         display: flex;
         flex-wrap: wrap;
         text-align: center;
@@ -1015,9 +1118,12 @@ input{
     .contenedorcartas-info .imgbanner img{
         width: 390px;
     }
+    .contenedorcartas-action-info .imgbanner img{
+        width: 390px;
+    }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
     
     .headerfiltrito .socialicons{
         display: none;
@@ -1043,12 +1149,12 @@ input{
     }
 
     .contenedor-cards .categorias{
-        grid-template-columns: 100%;
+        grid-template-columns: 90%;
         
     }
     .contenedor-cards .especiales {
-        grid-template-columns: 100%;
-       
+        grid-template-columns: 90%;
+
     }
     .contenedor-cards .card-t-skvio{
         
@@ -1058,16 +1164,18 @@ input{
         
     }
     .contenedor-cards .card-personalizados{
-       
         display: flex;
         flex-wrap: wrap;
         text-align: center;
     }
-  
+
     .contenedor-cards{
         padding: 2em 4em;
-    
+        margin-bottom: 1rem;
     }
-   
+
+    .contenedorcartas-action-info .imgbanner img{
+        width: 390px;
+    }
 }
 
