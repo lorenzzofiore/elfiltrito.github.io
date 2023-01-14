@@ -174,12 +174,13 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     justify-content: center;
+    height: 800px;
 }
 
 .contenedor-banner .contenido{
     width: 100%;
     grid-template-columns: 1fr;
-    margin-top: 10em;
+    margin-top: 6em;
     gap: 1em;
 }
 
@@ -237,8 +238,10 @@ body{
 
 .contenedor-banner .imgbanner{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
+}
+.contenedor-banner .imgbanner img{
+    height: 600px;
 }
 
 
@@ -298,8 +301,8 @@ body{
 
 
 .contenedor-cards .card-filtros:hover{
-    transform: scale(1.03);
-    box-shadow: 5px 5px 5px #806bae;
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
     color: #ffd200;
 }
 
@@ -315,8 +318,8 @@ body{
     justify-content: space-around;
 }
 .contenedor-cards .card-stickers:hover{
-    transform: scale(1.03);
-    box-shadow: 5px 5px 5px #806bae;
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
     color: #ffd200;
 }
 
@@ -340,8 +343,8 @@ body{
     
 }
 .contenedor-cards .card-personalizados:hover{
-    transform: scale(1.03);
-    box-shadow: 5px 5px 5px #806bae;
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
     
 }
 
@@ -363,8 +366,8 @@ body{
     justify-content: center;
 }
 .contenedor-cards .card-t-skvio:hover{
-    transform: scale(1.03);
-    box-shadow: 5px 5px 5px #806bae;
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
 }
 
 .contenedor-cards .card-filtros3d{
@@ -379,8 +382,8 @@ body{
     justify-content: space-around;
 }
 .contenedor-cards .card-filtros3d:hover{
-    transform: scale(1.03);
-    box-shadow: 5px 5px 5px #806bae;
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
     color: #ffd200;
 }
 
@@ -396,8 +399,8 @@ body{
     justify-content: space-around;
 }
 .contenedor-cards .card-specialsticker:hover{
-    transform: scale(1.03);
-    box-shadow: 5px 5px 5px #806bae;
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
     color: #fff;
 }
 
@@ -485,7 +488,7 @@ input{
 .contenedorinfo .card-instagram:hover{
     cursor: pointer;
     transform: scale(1.05); 
-    box-shadow: 5px 5px 5px #524077;
+    box-shadow: #806bae 0px 7px 29px 0px;
 }
 
 .contenedor-form{
@@ -1176,6 +1179,15 @@ input{
 
     .contenedorcartas-action-info .imgbanner img{
         width: 390px;
+    }
+
+    .developby{
+        position: absolute;
+        bottom: 20px;
+        left: 42%;
+    }
+    .developby img{
+        width: 50px;
     }
 }
 
