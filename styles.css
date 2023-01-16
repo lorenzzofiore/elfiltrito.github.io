@@ -12,6 +12,18 @@
 body{
     background-color: #ae92ea;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.title-h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 3.5rem;
 }
 
 .headerfiltrito .logomobile{
@@ -85,6 +97,7 @@ body{
 .headerfiltrito .socialicons{
     display: flex;
     float: left;
+    font-size: .8rem;
 }
 .socialicons a{
     text-decoration: none;
@@ -174,7 +187,7 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     justify-content: center;
-    height: 800px;
+    height: 740px;
 }
 
 .contenedor-banner .contenido{
@@ -241,6 +254,14 @@ body{
     justify-content: center;  
 }
 .contenedor-banner .imgbanner img{
+    height: 600px;
+}
+
+.descubrilos .imgbanner{
+    display: flex;
+    justify-content: center;  
+}
+.descubrilos .imgbanner img{
     height: 600px;
 }
 
@@ -421,6 +442,8 @@ body{
 }
 .newsletter .titlenews{
     color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .newsletter .formnewsletter button{
@@ -956,6 +979,114 @@ input{
 }
 
 
+.descubrilos .card-t-skvio{
+    background-color: #fff;
+    color: #806bae;
+    padding: 1.5em;
+    border: none;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+}
+.card-t-skvio .contentext{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.descubrilos .card-t-skvio:hover{
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
+}
+
+.descubrilos .card-personalizados{
+    background-color: #fff;
+    color: #806bae;
+    padding: 1.5em;
+    border: none;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+}
+
+.card-personalizados .contentext{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+.descubrilos .card-t-skvio .contentimg{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+.descubrilos .card-personalizados:hover{
+    transform: scale(1.02);
+    box-shadow: #806bae 0px 7px 29px 0px;
+    
+}
+
+.descubrilos .btn-personalizar{
+    padding: 14px;
+    background-color: #ffd200;
+    color: #111111;
+    font-weight: 600;
+    border-radius: 1em;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+}
+
+.descubrilos .btn-personalizar:hover{
+    transform: scale(1.1);
+    background-color: #111;
+    color: #ffd200; 
+}
+
+.descubrilos .contentext .btn-card{
+    background-color: #93c021;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: .8rem;
+    width: fit-content;
+    text-decoration: none;
+}
+.descubrilos .contentext .btn-card:hover{
+    color: #93c021;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.descubrilos .title-discover{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.descubrilos .btn-modelos{
+    padding: 14px;
+    background-color: #fff;
+    color: #93c021;
+    margin: auto;
+    font-weight: 600;
+    border-radius: 1em;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+    width: fit-content;
+    text-decoration: none;
+}
+
 /* MEDIAS RESPONSIVE*/
 
 @media screen and (max-width: 1366px) {
@@ -964,7 +1095,7 @@ input{
         font-size: 14px;
     }
     .contenedor-banner{
-    padding: 3em 0 0 3em;
+    padding: 0 0 0 5em;
     }
 
 }
@@ -1173,7 +1304,7 @@ input{
     }
 
     .contenedor-cards{
-        padding: 2em 4em;
+        padding: 2em 1em;
         margin-bottom: 1rem;
     }
 
@@ -1188,6 +1319,10 @@ input{
     }
     .developby img{
         width: 50px;
+    }
+
+    .contenedorinfo{
+        grid-template-columns: 1fr;
     }
 }
 
