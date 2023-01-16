@@ -7,62 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0225036776.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./js/nav.js">
+    <link rel="stylesheet" href="js/nav.js">
     <link rel="icon" href="img/favicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <title>elfiltrito | Filtros Personalizados</title>
 </head>
 <body>
-    <header class="headerfiltrito">
-
-        <div class="socialicons animate__bounceIn">
-            <a href="https://www.instagram.com/lorenzzofiore/?hl=es-la" class="instagram" target="_blank"> 
-                <i class="fa-brands fa-instagram-square"></i>
-            </a>
-            <a href="https://www.behance.net/lfedesign" class="behance" target="_blank">  
-                <i class="fa-brands fa-behance-square"></i>
-            </a>
-        </div>    
-
-        <div class="logomobile">
-            <a href="https://www.instagram.com/elfiltrito/?hl=es-la" target="_blank"><img src="img/logo.svg" alt="elfiltrito" height="70px"></a>
-        </div>
-
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-            <a href="#">Filtros</a>  
-            <div class="logo animate__bounceIn"><a href="index.html"><img src="img/logo.svg" alt="elfiltrito" height="70px" ></a></div>  
-            <a href="#">Stickers</a>    
-            <a href="contact.html">Contacto</a>    
-
-        </nav>
-
-        <a href="t-skavio.html" class="btnt-skvio animate__bounceIn"><button>T-SKVIO</button></a>
-
-        <a onclick="openNav()" href="#" class="menu"><button>Menu</button></a>
-	
-		<div class="overlay" id="mobile-menu">
-	
-        <a onclick="closeNav()" href="" class="close">&times;</a>
-	
-        <div class="overlay-content">
-	
-			    <a href="index.html">Home</a>
-				<a href="#">Filtros</a>
-				<a href="#">Stickers</a>
-				<a href="contact.html">Contacto</a>
-				<a href="t-skavio.html"><img src="img/logotskvio.svg" alt="" height="40px"></a>
-	
-        </div>
-        <div class="developby">
-            <img src="img/logoby.svg" alt="">
-        </div>
-		</div>
-
-    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <template-header>
+    </template-header>
 
     <section class="contenedor-banner">
 
@@ -173,11 +130,59 @@
         </article>
     </section>
 
+
+    <section class="descubrilos">
+        <div class="container">
+            <div class="row text-center p-4 mt-5">
+                <h1 class="title-discover text-white">Descubrí todos los modelos disponibles</h1>
+                <p class="text-white">Elegí el diseño que más te guste para aplicarlo donde quieras!</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row p-4 gap-4 justify-content-center wow animate__animated animate__bounceInRight">    
+                <article class="col-md p-4 card-t-skvio">
+                    <div class="contentimg">   
+                        <a href="t-skvio.html" class="t-skavio"><img src="img/filtros-24.png" width="150px" alt="filtros"></a>
+                    </div>
+                    <div class="contentext">
+                        <h3 class="title">COGORICK Model</h3>
+                        <p class="text">Pedilo en tus filtros, stickers o en la prenda que prefieras!</p>
+                        <a href="#" class="btn-card">Ver Modelo</a>
+                    </div>
+                </article> 
+                <article class="col-md p-4 card-personalizados">
+                    <div class="contentimg">   
+                        <a href="personaliza.html" class="imgpersonalizados"><img src="img/filtros-27.png" alt="filtros" width="150px"></a>
+                        </div>
+                    <div class="contentext">
+                        <h3 class="title">HOMER Model</h3>
+                        <p class="text">Pedilo en tus filtros, stickers o en la prenda que prefieras!</p>
+                        <a href="#" class="btn-card">Ver Modelo</a>
+                    </div> 
+                </article>
+                <article class="col-md p-4 card-personalizados">
+                    <div class="contentimg">   
+                        <a href="personaliza.html" class="imgpersonalizados"><img src="img/filtros-37.png" alt="filtros" width="150px"></a>
+                        </div>
+                    <div class="contentext">
+                        <h3 class="title">SCOOBY Model</h3>
+                        <p class="text">Pedilo en tus filtros, stickers o en la prenda que prefieras!</p>
+                        <a href="#" class="btn-card">Ver Modelo</a>
+                    </div> 
+                </article>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center mx-auto mt-4 mb-5">
+                <a href="#" class="btn-modelos">Ver todos los modelos</a>
+            </div>
+        </div>
+    </section>
+
     <section class="contenedor-contact">
             <h1 class="titlenews wow animate__animated animate__rubberBand">¿Donde los consigo?</h1>
             <p class="textnews wow animate__animated animate__fadeIn">Podes conseguir nuestros filtros en el punto de venta que figura abajo <br> o contactanos via instagram o email.</p>
         <div class="contenedorinfo">
-
             <article class="card-local wow animate__animated animate__bounceInLeft">
                 <h3 class="title">¡Escribinos!</h3>
                 <a href="stickers.html" class="imgstickers"><img src="img/mail-icon.svg" height="90px" alt="stickers"></a>
@@ -191,27 +196,11 @@
         
     </section>
 
-    <script type="text/javascript" src="./js/nav.js"></script> 
+    <template-footer>
+    </template-footer>
 
-    <footer class="footer">
-        <div class="logomobile">
-            <a href="https://www.instagram.com/elfiltrito/?hl=es-la"><img src="img/logo.svg" alt="elfiltrito" height="70px"></a>
-        </div>
-        <div class="socialicons">
-            <a href="https://www.instagram.com/lorenzzofiore/?hl=es-la" class="instagram" target="_blank"> 
-                <i class="fa-brands fa-instagram-square"></i>
-            </a>
-            <a href="https://www.behance.net/lfedesign" class="behance" target="_blank">  
-                <i class="fa-brands fa-behance-square"></i>
-            </a>
-        </div>    
-        <br>
-        <p>All rights reserved to elfiltrito®</p>
-    </footer>
-
-
-    <script type="text/javascript" src="./js/nav.js"></script>
-    
+    <script type="text/javascript" src="js/layout.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>    
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
