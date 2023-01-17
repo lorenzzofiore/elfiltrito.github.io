@@ -1087,6 +1087,10 @@ input{
     text-decoration: none;
 }
 
+.banner-sensei-mobile{
+    display: none;
+}
+
 /* MEDIAS RESPONSIVE*/
 
 @media screen and (max-width: 1366px) {
@@ -1272,9 +1276,18 @@ input{
         display: flex;
         float: left;
 	}
+
+    .banner-sensei{
+        display: none;
+    }
+    .banner-sensei-mobile{
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
     
     .contenedor-banner .contenido .titlebanner{
-        margin-top: 2em;
+        margin-top: 2.6em;
 		font-size: 3em;
         text-align: left;
 	}
