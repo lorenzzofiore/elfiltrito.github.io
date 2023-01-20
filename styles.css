@@ -229,8 +229,8 @@ body{
     
 }
 .contenedor-banner .contenido .btn-personalizar button,
-.contenedor-cards .especiales .btn-personalizar button,
-.contenedor-cards .categorias .btn-personalizar button{
+.contenedorcards .especiales .btn-personalizar button,
+.contenedorcards .categorias .btn-personalizar button{
     padding: 14px;
     background-color: #ffd200;
     color: #111111;
@@ -242,8 +242,8 @@ body{
     font-size: 14px;
 }
 .contenedor-banner .contenido .btn-personalizar button:hover,
-.contenedor-cards .especiales .btn-personalizar button:hover,
-.contenedor-cards .categorias .btn-personalizar button:hover{
+.contenedorcards .especiales .btn-personalizar button:hover,
+.contenedorcards .categorias .btn-personalizar button:hover{
     transform: scale(1.1);
     background-color: #111;
     color: #ffd200;  
@@ -269,7 +269,7 @@ body{
 
 /* ESTILOS CONTENEDOR-CATEGORIAS */
 
-.contenedor-cards{
+.contenedorcards{
     width: 100%;
     margin-top: 1em;
     margin-bottom: 5em;
@@ -282,7 +282,7 @@ body{
     justify-content: center;
 }
 
-.contenedor-cards .categorias{
+.contenedorcards .categorias{
     width: 100%;
     max-width: 1440px;
     display: grid;
@@ -291,7 +291,7 @@ body{
     gap: 1em;
     justify-content: center;
 }
-.contenedor-cards .especiales{
+.contenedorcards .especiales{
     width: 100%;
     max-width: 1440px;
     display: grid;
@@ -306,7 +306,7 @@ body{
 
 /*ESTILOS CARDS*/
 
-.contenedor-cards .card-filtros{
+.contenedorcards .card-filtros{
     background-color: #fff;
     color: #806bae;
     padding: 1.5em;
@@ -321,13 +321,13 @@ body{
 }
 
 
-.contenedor-cards .card-filtros:hover{
+.contenedorcards .card-filtros:hover{
     transform: scale(1.02);
     box-shadow: #806bae 0px 7px 29px 0px;
     color: #ffd200;
 }
 
-.contenedor-cards .card-stickers{
+.contenedorcards .card-stickers{
     background-color: #fff;
     color: #806bae;
     padding: 1.5em;
@@ -338,13 +338,13 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-.contenedor-cards .card-stickers:hover{
+.contenedorcards .card-stickers:hover{
     transform: scale(1.02);
     box-shadow: #806bae 0px 7px 29px 0px;
     color: #ffd200;
 }
 
-.contenedor-cards .card-personalizados{
+.contenedorcards .card-personalizados{
     background-color: #fff;
     color: #806bae;
     padding: 1.5em;
@@ -363,13 +363,13 @@ body{
     justify-content: center;
     
 }
-.contenedor-cards .card-personalizados:hover{
+.contenedorcards .card-personalizados:hover{
     transform: scale(1.02);
     box-shadow: #806bae 0px 7px 29px 0px;
     
 }
 
-.contenedor-cards .card-t-skvio{
+.contenedorcards .card-t-skvio{
     background-color: #fff;
     color: #806bae;
     padding: 1.5em;
@@ -386,12 +386,12 @@ body{
     align-content: center;
     justify-content: center;
 }
-.contenedor-cards .card-t-skvio:hover{
+.contenedorcards .card-t-skvio:hover{
     transform: scale(1.02);
     box-shadow: #806bae 0px 7px 29px 0px;
 }
 
-.contenedor-cards .card-filtros3d{
+.contenedorcards .card-filtros3d{
     background-color: #111;
     color: #fff;
     padding: 1.5em;
@@ -402,13 +402,13 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-.contenedor-cards .card-filtros3d:hover{
+.contenedorcards .card-filtros3d:hover{
     transform: scale(1.02);
     box-shadow: #806bae 0px 7px 29px 0px;
     color: #ffd200;
 }
 
-.contenedor-cards .card-specialsticker{
+.contenedorcards .card-specialsticker{
     background-color: #ffd200;
     color: #111;
     padding: 1.5em;
@@ -419,7 +419,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-.contenedor-cards .card-specialsticker:hover{
+.contenedorcards .card-specialsticker:hover{
     transform: scale(1.02);
     box-shadow: #806bae 0px 7px 29px 0px;
     color: #fff;
@@ -1091,6 +1091,10 @@ input{
     display: none;
 }
 
+.banner-sensei{
+    width: 60%;
+}
+
 /* MEDIAS RESPONSIVE*/
 
 @media screen and (max-width: 1366px) {
@@ -1121,15 +1125,15 @@ input{
         text-align: center;
         margin-top: -2em;
 	}
-    .contenedor-cards{
+    .contenedorcards{
         padding: 1rem;
         grid-template-columns: 2fr;
     }
-    .contenedor-cards .categorias{
+    .contenedorcards .categorias{
         grid-template-columns: 1fr;
         
     }
-    .contenedor-cards .especiales {
+    .contenedorcards .especiales {
         grid-template-columns: 1fr;
     }
     .contenedor-contact{
@@ -1180,7 +1184,7 @@ input{
     .headerfiltrito .logomobile{
         display: block;
     }
-    .contenedor-cards{
+    .contenedorcards{
         width: 100%;
         padding: 2em 2em 2em 2em;
     
@@ -1216,14 +1220,14 @@ input{
     .newsletter{
         display: none;
     }
-	.contenedor-cards .card-t-skvio{
+	.contenedorcards .card-t-skvio{
         
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         
     }
-    .contenedor-cards .card-personalizados{
+    .contenedorcards .card-personalizados{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
@@ -1250,7 +1254,7 @@ input{
         flex-direction: column;
     }
 
-    .contenedor-cards{
+    .contenedorcards{
         padding: 2em;
     }
     .contenedorcartas-info .imgbanner img{
@@ -1295,28 +1299,28 @@ input{
         text-align: left;
     }
 
-    .contenedor-cards .categorias{
+    .contenedorcards .categorias{
         grid-template-columns: 90%;
         
     }
-    .contenedor-cards .especiales {
+    .contenedorcards .especiales {
         grid-template-columns: 90%;
 
     }
-    .contenedor-cards .card-t-skvio{
+    .contenedorcards .card-t-skvio{
         
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         
     }
-    .contenedor-cards .card-personalizados{
+    .contenedorcards .card-personalizados{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
     }
 
-    .contenedor-cards{
+    .contenedorcards{
         padding: 2em 1em;
         margin-bottom: 1rem;
     }
